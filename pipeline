@@ -29,9 +29,6 @@ spec:
   - name: docker-domain                                                                      
     hostPath:                                                                                
       path: /etc/docker/certs.d/artifact.paas.yp/domain.crt
-      
-      
-"""
 ) {
     node(label) {
         stage('Get a Golang project') {
