@@ -34,42 +34,23 @@ spec:
 """
 ) {
     node(label) {
-        //def rtServer = Artifactory.newServer url: 'http://10.151.30.176:8000/artifactory/', credentialsId: '402a9d9d-bda0-4f19-9d66-4c0efa0ac370'
-        
-    
         stage('Get a Golang project') {
             container('docker-go-java-maven') {
                 stage('Build a Go project') {
-                //    git branch: 'master', 
-                //    credentialsId: credentials,
                 git url: 'http://gitlab.yeepay.com/chen.wu/test.git'
                     sh 'mkdir /home/build-shell'
                     sh 'mv * /home/build-shell/'
                 }
                 stage('test'){
                 git url: 'http://gitlab.yeepay.com/chen.wu/paas-sandbox-hessian-chenwu.git'            
-                //    git branch: 'master',
-                //    credentialsId: credentials,
-                //    url: ''
-                //env.CODE_VERSION = scmVars.GIT_COMMIT.take(8)
                 sh "/bin/date +%Y%m%d%H%M%S > build_time"
                 env.BUILD_TIME = readFile('build_time').trim()
-                }
-                stage('check packages'){
-                //    sh 'echo wwwwww'    
-                }
-                stage('build'){
-                //    sh 'mvn clean install -Dmaven.test.skip=true -Ddbinit.skip=true'
                 }
                 stage('build && push jfrog'){
                     sh '/home/build-shell/ad_3g_build-jfrog.sh tomcat'
                 }
-                 stage('check packages'){
-                   // sh 'sleep 1000'    
-                }
                 stage('Build and push image'){
                     sh '/home/build-shell/getConfig.sh'
-                //    sh 'sleep 1000'
                     sh './build-chen.sh'
                 }
             }
