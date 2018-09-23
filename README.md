@@ -37,7 +37,7 @@
         5）加creditiel证书
         6）将宿主机/root/.docker/config.json    /etc/docker/certs.d/artifact.paas.yp/domain.crt挂载到容器上
 ####    2. pipeline设置
- 1）选择参数化构建过程，按照下图顺序依次进行设置
+   1）选择参数化构建过程，按照下图顺序依次进行设置
  <div style="text-align: center">
  <img src="picture/5.png"/>
  </div>
@@ -47,3 +47,4 @@
   <div style="text-align: center">
  <img src="picture/7.png"/>
  </div>
+    2）在命令框中输入脚本pipeline（内容地址为https://github.com/penpenpenpen/jenkins-k8s-ci/blob/master/pipeline）
