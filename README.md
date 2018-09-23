@@ -27,6 +27,7 @@
  <div style="text-align: center">
  <img src="picture/4.png"/>
  </div>
+ 
 ### 三. java项目构建
 ####    1. 镜像构建
         1）在centos镜像中安装docker , java(1.8) , maven    
