@@ -15,3 +15,26 @@
  <img src="picture/1.png"/>
  </div>
    2). 按照jenkins界面的提示逐步操作，得到下面界面
+ <div style="text-align: center">
+ <img src="picture/2.png"/>
+ </div>
+   3). 点击 “系统管理” —> “管理插件” —> “可选插件” —> “Kubernetes ” 勾选安装
+ <div style="text-align: center">
+ <img src="picture/3.png"/>
+ </div>
+  4).  点击 “系统管理” —> “系统设置” —> “新增一个云” —> 选择 “Kubernetes”，然后填写 Kubernetes 和 Jenkins 配置信息     
+  (其中Jenkins地址的ip为CLUSTER-IP(这里为172.29.32.50)，端口为8080，Kubernetes地址的ip为10.151.33.87，端口为8080） 
+ <div style="text-align: center">
+ <img src="picture/4.png"/>
+ </div>
+ 
+### 三. java项目构建
+####    1. 镜像构建
+        1）在centos镜像中安装docker , java(1.8) , maven    
+        2)  加入repository文件，setting文件
+        3）安装，配置frog
+        4）安装zip
+        5）加creditiel证书
+        6）将宿主机/root/.docker/config.json    /etc/docker/certs.d/artifact.paas.yp/domain.crt挂载到容器上
+####    2. pipeline设置
+        1）选择参数化构建过程，按照下图顺序依次进行设置
