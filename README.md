@@ -11,3 +11,6 @@
     其中文件内容所在的地址为：https://github.com/penpenpenpen/jenkins-k8s-ci
 #####    2 . 设置jenkins
         1). 获取外部访问jenkins的端口(这里为30085)，ip为CI/CD集群下的任意节点ip，这里选用10.151.33.87
+        <div style="text-align: center">
+        <img src="1.png"/>
+        </div>
