@@ -36,6 +36,7 @@
         4）安装zip
         5）加creditiel证书
         6）将宿主机/root/.docker/config.json    /etc/docker/certs.d/artifact.paas.yp/domain.crt挂载到容器上
+         (最终我们形成的镜像为 img.reg.3g:15000/docker-go-java-maven:3.9(在CICD使用docker images可以查找到))
 ####    2. pipeline设置
    1）选择参数化构建过程，按照下图顺序依次进行设置
  <div style="text-align: center">
