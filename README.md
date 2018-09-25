@@ -50,4 +50,5 @@
     2）在命令框中输入脚本pipeline（内容地址为https://github.com/penpenpenpen/jenkins-k8s-ci/blob/master/pipeline）
     
 ##### 参考文件
-https://github.com/jenkinsci/kubernetes-plugin
+（1）https://github.com/jenkinsci/kubernetes-plugin
+（2）https://blog.csdn.net/aixiaoyang168/article/details/79767649
