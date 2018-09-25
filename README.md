@@ -48,3 +48,6 @@
  <img src="picture/7.png"/>
  </div>
     2）在命令框中输入脚本pipeline（内容地址为https://github.com/penpenpenpen/jenkins-k8s-ci/blob/master/pipeline）
+    
+##### 参考文件
+https://github.com/jenkinsci/kubernetes-plugin
